@@ -23,6 +23,8 @@ The robots.txt file is a text file that tells web robots (most often search engi
 A sitemap is a file that lists all the pages on your website. It helps search engines discover and crawl the pages on your site. The sitemap is typically written in XML format and can be submitted to search engines through their webmaster tools or directly in the robots.txt file.
 
 
+* Be sure to use the `Link` component in next JS or you will not see your URLs in SEO scan tools.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
