@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router"
 import SEOHead from "../../src/components/SEOHead/SEOHead";
-import {API_URL} from "../../src/components/config";
+import {API_URL} from "../../src/config";
 
 export const getStaticPaths = async () => {
   const res = await fetch(`${API_URL}/wp-json/wp/v2/posts?_embed`);

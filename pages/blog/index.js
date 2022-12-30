@@ -1,7 +1,7 @@
 import React from "react";
 import {ApolloClient, InMemoryCache, gql} from "@apollo/client";
 import SEOHead from "../../src/components/SEOHead/SEOHead";
-import {WORDPRESS_GRAPHQL} from "../../src/components/config";
+import {WORDPRESS_GRAPHQL} from "../../src/config";
 
 export default function Blog(data) {
     const posts = data.data.filter(post => post.node.featuredImage !== null && !post.node.title.includes('Case Study:') )

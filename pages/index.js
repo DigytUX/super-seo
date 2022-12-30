@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-       <SEOHead
-        title="Super SEO"
-        description="Dynamically rendered and SEO friendly"
-        pageURL=""
-        canonicalLink=""
+      <SEOHead
+      title="Super SEO"
+      description="Dynamically rendered and SEO friendly"
+      pageURL=""
+      canonicalLink=""
       />
       <main className={styles.main}>
         <div className={styles.description}>
