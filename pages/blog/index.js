@@ -1,8 +1,8 @@
 import React from "react";
 import {ApolloClient, InMemoryCache, gql} from "@apollo/client";
 import SEOHead from "../../src/components/SEOHead/SEOHead";
-import {WORDPRESS_GRAPHQL, DOMAIN_NAME} from "../../src/config";
-
+import {API_URL, DOMAIN_NAME} from "../../src/config";
+import Link from 'next/link'
 export default function Blog(newData) {
     const posts = newData.data.filter(post => post.node.featuredImage !== null && !post.node.title.includes('Case Study:') )
     return (
@@ -13,14 +13,20 @@ export default function Blog(newData) {
           pageURL=""
           canonicalLink="test"
         />
+        <div>
+        {posts.map((post, i) => (
+          <Link key={i} href={`/blog/${post.node.slug}`}>{post.node.slug}</Link>
+        ))}
+        </div>
       </>
     );
 }
 
 export async function getStaticProps() {
+  const uri = API_URL + 'graphql'
 
   const client = new ApolloClient({
-    uri: WORDPRESS_GRAPHQL,
+    uri: uri,
     cache: new InMemoryCache(),
   });
   
