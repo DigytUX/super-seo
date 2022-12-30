@@ -5,15 +5,14 @@ import {WORDPRESS_GRAPHQL, DOMAIN_NAME} from "../../src/config";
 
 export default function Blog(newData) {
     const posts = newData.data.filter(post => post.node.featuredImage !== null && !post.node.title.includes('Case Study:') )
-    console.log('new data', newData)
     return (
       <>
-       <SEOHead
-        title="SEO Blog"
-        description="Dynamically rendered and SEO friendly"
-        pageURL=""
-        canonicalLink="test"
-      />
+        <SEOHead
+          title="SEO Blog"
+          description="Dynamically rendered and SEO friendly"
+          pageURL=""
+          canonicalLink="test"
+        />
       </>
     );
 }

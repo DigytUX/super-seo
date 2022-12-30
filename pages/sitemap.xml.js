@@ -2,22 +2,25 @@ import {API_URL, DOMAIN_NAME} from '../src/config'
 
 const EXTERNAL_DATA_URL = `https://${DOMAIN_NAME}/blog`;
 
+const staticEndpoints = [
+   'blog', 
+   'about', 
+   'contact'
+]
+
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
-     <url>
-       <loc>https://${DOMAIN_NAME}</loc>
-     </url>
-     <url>
-       <loc>https://${DOMAIN_NAME}/blog</loc>
-     </url>
-     <url>
-       <loc>https://${DOMAIN_NAME}/about</loc>
-     </url>
-     <url>
-       <loc>https://${DOMAIN_NAME}/contact</loc>
-     </url>
+     ${staticEndpoints
+        .map((item) => {
+          return `
+        <url>
+            <loc>${`https://${DOMAIN_NAME}/${item}`}</loc>
+        </url>
+      `;
+        })
+        .join('')}
      ${posts
        .map(({ slug }) => {
          return `

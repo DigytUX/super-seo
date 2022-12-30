@@ -39,12 +39,12 @@ const Post = ({ post, domain }) => {
 
   return (
     <>
-    <SEOHead 
-      title={post[0].title.rendered} 
-      description={post[0].excerpt.rendered.replace(/<[^>]+>/g, '')}
-      pageURL={`https://${domain}/blog/${post[0].slug}`} 
-      canonicalLink={`https://${domain}/blog/${post[0].slug}`}
-    />
+      <SEOHead 
+        title={post[0].title.rendered} 
+        description={post[0].excerpt.rendered.replace(/<[^>]+>/g, '')}
+        pageURL={`https://${domain}/blog/${post[0].slug}`} 
+        canonicalLink={`https://${domain}/blog/${post[0].slug}`}
+      />
     {/* <Container className="blog-post-container" maxWidth="md">
       <div>
         <article>
