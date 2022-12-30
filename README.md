@@ -13,7 +13,7 @@ Super SEO is a next JS template that is configured for dynamic SEO content right
 - More customers and web traffic
 - Higher conversions
 - More trust, reviews and return patreons/patients/clients...etc
-- 
+
 ### Features
 
 #### Robots.txt
