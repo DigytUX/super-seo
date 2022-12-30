@@ -1,24 +1,25 @@
 import React from "react";
 import {ApolloClient, InMemoryCache, gql} from "@apollo/client";
 import SEOHead from "../../src/components/SEOHead/SEOHead";
-import {WORDPRESS_GRAPHQL} from "../../src/config";
+import {WORDPRESS_GRAPHQL, DOMAIN_NAME} from "../../src/config";
 
-export default function Blog(data) {
-    const posts = data.data.filter(post => post.node.featuredImage !== null && !post.node.title.includes('Case Study:') )
-    console.log(posts[0].node.slug)
+export default function Blog(newData) {
+    const posts = newData.data.filter(post => post.node.featuredImage !== null && !post.node.title.includes('Case Study:') )
+    console.log('new data', newData)
     return (
       <>
        <SEOHead
         title="SEO Blog"
         description="Dynamically rendered and SEO friendly"
         pageURL=""
-        canonicalLink=""
+        canonicalLink="test"
       />
       </>
     );
 }
 
 export async function getStaticProps() {
+
   const client = new ApolloClient({
     uri: WORDPRESS_GRAPHQL,
     cache: new InMemoryCache(),
@@ -78,10 +79,11 @@ export async function getStaticProps() {
   });
 
   const data = response.data.posts.edges;
-  
+
   return {
     props: {
       data,
+      domain:DOMAIN_NAME
     },
   };
 };

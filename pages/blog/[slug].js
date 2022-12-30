@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router"
 import SEOHead from "../../src/components/SEOHead/SEOHead";
-import {API_URL} from "../../src/config";
+import {API_URL, DOMAIN_NAME} from "../../src/config";
 
 export const getStaticPaths = async () => {
   const res = await fetch(`${API_URL}/wp-json/wp/v2/posts?_embed`);
@@ -23,11 +23,11 @@ export const getStaticProps = async ({ params }) => {
   const post = await postBySlug.json()
 
   return {
-    props: { post },
+    props: { post, domain:DOMAIN_NAME },
   };
 }
 
-const Post = ({ post }) => {
+const Post = ({ post, domain }) => {
   const router = useRouter();
   const mounted = useRef(false)
   useEffect(
@@ -42,8 +42,8 @@ const Post = ({ post }) => {
     <SEOHead 
       title={post[0].title.rendered} 
       description={post[0].excerpt.rendered.replace(/<[^>]+>/g, '')}
-      pageURL={`https://www.yourdomain/blog/${post[0].slug}`} 
-      canonicalLink={`https://www.yourdomain/blog/${post[0].slug}`}
+      pageURL={`https://${domain}/blog/${post[0].slug}`} 
+      canonicalLink={`https://${domain}/blog/${post[0].slug}`}
     />
     {/* <Container className="blog-post-container" maxWidth="md">
       <div>
