@@ -3,6 +3,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## What is Super SEO?
 Super SEO is a next JS template that is configured for dynamic SEO content right out of the box! Currently it only uses Wordpress's API but will later on add branches to service other CMSs.
+
+### Why Super SEO
+- Straight to the point SEO configuration based on content meta
+- Headless Friendly (Built once and run anywhere)
+- Dynamic, content is automatically updated with seo preconfigured
+- Dynamic sitemap (no need to manually add urls)
+- Enhances search engine rankings
+- More customers and web traffic
+- Higher conversions
+- More trust, reviews and return patreons/patients/clients...etc
+- 
 ### Features
 
 #### Robots.txt
