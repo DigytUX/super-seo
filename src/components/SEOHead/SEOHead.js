@@ -12,10 +12,17 @@ export default function SEOHead({
   }){
     return (
       <Head>
+        {/* 50 - 60 chars long recommended, include target keyword */}
         <title>{title ? title : 'Digyt'}</title>
+        
+        {/* Be sure description matches the relative search query or search bots may ignore and suggest other content */}
         <meta name="description" content={description ?  description : "test test test"} />
+
+        {/* For scaling (no zooming in on form fields on mobile) */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         {robots && <meta name="robots" content={robots} /> }
+        
         <meta property="og:title" content={title ? title : 'Digyt | Detroit Web Development and SEO'} />
         <meta property="og:locale" content={locale ? locale : "en-US"} />
         <meta property="og:type" content={type ? type : "website"} />
