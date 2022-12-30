@@ -7,10 +7,16 @@ function generateSiteMap(posts) {
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
      <url>
-       <loc>https://jsonplaceholder.typicode.com</loc>
+       <loc>https://${DOMAIN_NAME}</loc>
      </url>
      <url>
-       <loc>https://jsonplaceholder.typicode.com/guide</loc>
+       <loc>https://${DOMAIN_NAME}/blog</loc>
+     </url>
+     <url>
+       <loc>https://${DOMAIN_NAME}/about</loc>
+     </url>
+     <url>
+       <loc>https://${DOMAIN_NAME}/contact</loc>
      </url>
      ${posts
        .map(({ slug }) => {
@@ -33,7 +39,6 @@ export async function getServerSideProps({ res }) {
     // We make an API call to gather the URLs for our site
     const response = await fetch(`${API_URL}/wp-json/wp/v2/posts?_embed`);
     const posts = await response.json();
-    const paths = posts.map((post)=> ({ params: {slug: post.slug}}))
 
     // We generate the XML sitemap with the posts data
     const sitemap = generateSiteMap(posts);
