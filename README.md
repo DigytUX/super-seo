@@ -1,7 +1,7 @@
 ![software-engineer 3(1)](https://user-images.githubusercontent.com/44784345/210101299-b4b8a1af-dbf1-4df6-ad17-3f226b25b883.png)
 
 ## What is Super SEO?
-Super SEO is a next JS template that is configured for dynamic SEO content right out of the box! Currently it only uses Wordpress's API but will later on add branches to service other CMSs.
+Super SEO is a Next JS template that is configured to help developers engineer robust React applications that are dynmaic and SEO friendly.
 
 ### Why Super SEO
 - Straight to the point SEO configuration based on content meta
