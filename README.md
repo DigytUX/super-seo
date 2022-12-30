@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ![software-engineer 3(1)](https://user-images.githubusercontent.com/44784345/210101299-b4b8a1af-dbf1-4df6-ad17-3f226b25b883.png)
 
-## Getting Started
-
+## What is Super SEO?
+Super SEO is a next JS template that is configured for dynamic SEO content right out of the box! Currently it only uses Wordpress's API but will later on add branches to service other CMSs.
 First, run the development server:
 
 ```bash
