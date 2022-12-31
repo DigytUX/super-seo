@@ -34,9 +34,7 @@ The base website address (example..."www.digyt.co"). Use no slashes and a subdom
 
 ## Deploy on Vercel
 
-## SEO Tips
+### SEO Tips
+Read more about technical SEO structure.
 https://www.socialmediatoday.com/news/8-of-the-most-important-html-tags-for-seo/574987/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
