@@ -1,6 +1,6 @@
 ![software-engineer 3 (2)](https://user-images.githubusercontent.com/44784345/210148817-6b6729e4-902f-4ab9-9aa6-81a43bc80c33.png)
 ## What is Super SEO?
-Super SEO is a Next JS template that is configured to help developers engineer robust React applications that are dynmaic and SEO friendly.
+Super SEO is a Next JS template that is configured to help developers engineer robust React applications that are dynamic and SEO friendly.
 
 ### Why Super SEO
 - Straight to the point SEO configuration based on content meta
