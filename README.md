@@ -13,7 +13,7 @@ Super SEO is a Next JS template that is configured to help developers engineer r
 - More trust, reviews and return patreons/patients/clients...etc
 
 ### Features
-All your client's to focus on marketing and not the shitty tech stuff
+All your clients to focus on marketing and not the shitty tech stuff
 
 #### Robots.txt
 The robots.txt file is a text file that tells web robots (most often search engines) which pages on your site to crawl and which not to crawl. It is a way to give web robots instructions for how to crawl your site.
