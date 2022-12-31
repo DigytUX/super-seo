@@ -24,6 +24,14 @@ A sitemap is a file that lists all the pages on your website. It helps search en
 
 * Be sure to use the `Link` component in next JS or you will not see your URLs in SEO scan tools.
 
+### Environment Variables
+
+#### `API_URL`
+This is the endpoint that will be serving the data (blog post content..etc) to your application.
+
+#### `DOMAIN_NAME`
+The base website address (example..."www.digyt.co"). Use no slashes and a subdomain is optional
+
 ## Deploy on Vercel
 
 ## SEO Tips
