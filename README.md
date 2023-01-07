@@ -18,8 +18,6 @@ All your clients to focus on marketing and not the shitty tech stuff
 #### Robots.txt
 The robots.txt file is a text file that tells web robots (most often search engines) which pages on your site to crawl and which not to crawl. It is a way to give web robots instructions for how to crawl your site.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/christopherclemmons/z7nywagp/88/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
 #### Sitemap.xml
 A sitemap is a file that lists all the pages on your website. It helps search engines discover and crawl the pages on your site. The sitemap is typically written in XML format and can be submitted to search engines through their webmaster tools or directly in the robots.txt file.
 
