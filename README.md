@@ -22,6 +22,7 @@ The robots.txt file is a text file that tells web robots (most often search engi
 #### Sitemap.xml
 A sitemap is a file that lists all the pages on your website. It helps search engines discover and crawl the pages on your site. The sitemap is typically written in XML format and can be submitted to search engines through their webmaster tools or directly in the robots.txt file.
 
+<script async src="//jsfiddle.net/christopherclemmons/z7nywagp/88/embed/"></script>
 
 * Be sure to use the `Link` component in next JS or you will not see your URLs in SEO scan tools.
 
