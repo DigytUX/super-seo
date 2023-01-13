@@ -12,12 +12,12 @@ export default function Home() {
       <SEOHead
       title="Super SEO"
       description="Dynamically rendered and SEO friendly"
-      pageURL=""
-      canonicalLink=""
+      pageURL="https://yourdomain.com"
+      canonicalLink="https://yourdomain.com"
       />
       <main className={styles.main}>
         <div className={styles.center}>
-          <h1 className={inter.className}>Hello</h1>
+          <h1 className={inter.className}>Build for the web.</h1>
         </div>
       </main>
     </>
