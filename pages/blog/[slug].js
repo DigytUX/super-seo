@@ -8,7 +8,6 @@ export const getStaticPaths = async () => {
   const posts = await res.json();
   
   const paths = posts.map((post)=> ({ params: {slug: post.slug}}))
-  console.log('paths', paths)
 
   return {
     paths,
